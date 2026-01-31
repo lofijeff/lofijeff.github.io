@@ -21,4 +21,5 @@
     .inner-border {
       border-style: solid;
       border-color: white;
+      padding: 7px;
     }

@@ -1,0 +1,23 @@
+:root {
+  
+}    
+    
+    body {
+      background-color: black;
+      color: white;
+}
+
+    .outer-border {
+      border-style: dashed;
+      border-color: white;
+    }
+
+    .middle-border {
+      border-style: dotted;
+      border-color: white;
+    }
+
+    .inner-border {
+      border-style: solid;
+      border-color: white;
+    }

@@ -40,6 +40,14 @@
       padding: 7px;
 }
 
+    img {
+      width: 420px;
+}
+
+    img:hover {
+      width: 600px;
+}
+
     .outer-border {
       border-style: dashed;
       border-color: var(--brdr);

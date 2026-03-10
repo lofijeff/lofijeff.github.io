@@ -21,6 +21,12 @@ async function loadPosts() {
 
     const article = document.createElement('article');
     article.innerHTML = html;
+    article.querySelectorAll("a").forEach(link => {
+      if (link.querySelector("img")) {
+        link.target = "_blank";
+        link.rel = "noopener";
+      }
+    });
 
     border1.appendChild(border2);
     border2.appendChild(border3);

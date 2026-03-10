@@ -44,8 +44,8 @@
       width: 420px;
 }
 
-    img:hover {
-      width: 600px;
+    .inner-border img {
+      width: 100%;
 }
 
     .outer-border {

@@ -51,7 +51,8 @@
     .outer-border {
       border-style: dashed;
       border-color: var(--brdr);
-      width: 550px;
+      width: 750px;
+      margin-bottom: 50px;
     }
 
     .middle-border {

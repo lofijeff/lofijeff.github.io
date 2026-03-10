@@ -17,6 +17,11 @@
       font-size: large;
 }
 
+    a {
+      text-decoration: none;
+      color: var(--fg);
+}
+
     .content {
       display: column:
 }
@@ -25,19 +30,27 @@
       display: flex;
       justify-content: center;
 }
+    .first {
+      margin-left: 200px;
+      font-size: small;
+}
 
     .contactb {
       border: none;
       background-color: black;
       color: var(--fg);
 }
+
+    .contactb:hover {
+      cursor: pointer;
+}
     .contactcontent {
       position: fixed;
       top: -50%;
-      border: solid 4px orange;
+      border: dashed 4px orange;
       background-color: black;
       color: var(--fg);
-      padding: 7px;
+      padding: 25px;
 }
 
     img {

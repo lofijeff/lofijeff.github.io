@@ -1,7 +1,6 @@
 async function loadPosts() {
   const res = await fetch('posts.json');
-  const files = await res.json();
-
+  const files = (await res.json()).reverse();
   const container = document.getElementById('posts');
 
   for (const file of files) {

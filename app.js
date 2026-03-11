@@ -8,9 +8,11 @@ async function loadPosts() {
     const md = await mdRes.text();
 
     const html = marked.parse(md);
+    const id = file.replace(".md", "");
 
     const border1 = document.createElement('div');
     border1.className = "outer-border";
+    border1.id = id;
 
     const border2 = document.createElement('div');
     border2.className = "middle-border";
@@ -20,6 +22,13 @@ async function loadPosts() {
 
     const article = document.createElement('article');
     article.innerHTML = html;
+    const permalink = document.createElement("a");
+    permalink.href = `#${id}`;
+    permalink.textContent = "link2post";
+    permalink.style.color = "orange";
+    permalink.style.float = "right";
+
+    article.prepend(permalink);
     article.querySelectorAll("a").forEach(link => {
       if (link.querySelector("img")) {
         link.target = "_blank";

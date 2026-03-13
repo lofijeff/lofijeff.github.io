@@ -1,81 +1,81 @@
 :root {
-  --fg: #D6D6D6;
+  --fg: #d6d6d6;
   --brdr: #787878;
-}    
+}
 
 @font-face {
-  font-family: 'JetBrainsMono';
-  src: url('./assets/font.woff2') format('woff2');
-}
-    
-    body {
-      font-family: 'JetBrainsMono';
-      display: flex;
-      justify-content: center;
-      background-color: black;
-      color: var(--fg);
-      font-size: large;
+  font-family: "JetBrainsMono";
+  src: url("./assets/font.woff2") format("woff2");
 }
 
-    a {
-      text-decoration: none;
-      color: var(--fg);
+body {
+  font-family: "JetBrainsMono";
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: var(--fg);
+  font-size: large;
 }
 
-    .content {
-      display: column:
+a {
+  text-decoration: none;
+  color: var(--fg);
 }
 
-    .header {
-      display: flex;
-      justify-content: center;
-}
-    .first {
-      margin-left: 200px;
-      font-size: small;
+.content {
+  display: column;
 }
 
-    .contactb {
-      border: none;
-      background-color: black;
-      color: var(--fg);
+.header {
+  display: flex;
+  justify-content: center;
+}
+.first {
+  margin-left: 200px;
+  font-size: small;
 }
 
-    .contactb:hover {
-      cursor: pointer;
-}
-    .contactcontent {
-      position: fixed;
-      top: -50%;
-      border: dashed 4px orange;
-      background-color: black;
-      color: var(--fg);
-      padding: 25px;
+.contactb {
+  border: none;
+  background-color: black;
+  color: var(--fg);
 }
 
-    img {
-      width: 420px;
+.contactb:hover {
+  cursor: pointer;
+}
+.contactcontent {
+  position: fixed;
+  top: -50%;
+  border: dashed 4px orange;
+  background-color: black;
+  color: var(--fg);
+  padding: 25px;
 }
 
-    .inner-border img {
-      width: 100%;
+img {
+  width: 420px;
 }
 
-    .outer-border {
-      border-style: dashed;
-      border-color: var(--brdr);
-      width: 750px;
-      margin-bottom: 50px;
-    }
+.inner-border img {
+  width: 100%;
+}
 
-    .middle-border {
-      border-style: dotted;
-      border-color: var(--brdr);
-    }
+.outer-border {
+  border-style: dashed;
+  border-color: var(--brdr);
+  width: 750px;
+  margin-bottom: 50px;
+}
 
-    .inner-border {
-      border-style: dashed;
-      border-color: var(--brdr);
-      padding: 15px;
-      text-align: justify;
-    }
+.middle-border {
+  border-style: dotted;
+  border-color: var(--brdr);
+}
+
+.inner-border {
+  border-style: dashed;
+  border-color: var(--brdr);
+  padding: 15px;
+  text-align: justify;
+}

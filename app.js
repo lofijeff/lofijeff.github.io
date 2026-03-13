@@ -1,7 +1,7 @@
 async function loadPosts() {
-  const res = await fetch('posts.json');
+  const res = await fetch("posts.json");
   const files = (await res.json()).reverse();
-  const container = document.getElementById('posts');
+  const container = document.getElementById("posts");
 
   for (const file of files) {
     const mdRes = await fetch(`posts/${file}`);
@@ -10,17 +10,17 @@ async function loadPosts() {
     const html = marked.parse(md);
     const id = file.replace(".md", "");
 
-    const border1 = document.createElement('div');
+    const border1 = document.createElement("div");
     border1.className = "outer-border";
     border1.id = id;
 
-    const border2 = document.createElement('div');
+    const border2 = document.createElement("div");
     border2.className = "middle-border";
 
-    const border3 = document.createElement('div');
+    const border3 = document.createElement("div");
     border3.className = "inner-border";
 
-    const article = document.createElement('article');
+    const article = document.createElement("article");
     article.innerHTML = html;
     const permalink = document.createElement("a");
     permalink.href = `#${id}`;
@@ -29,7 +29,7 @@ async function loadPosts() {
     permalink.style.float = "right";
 
     article.prepend(permalink);
-    article.querySelectorAll("a").forEach(link => {
+    article.querySelectorAll("a").forEach((link) => {
       if (link.querySelector("img")) {
         link.target = "_blank";
         link.rel = "noopener";
@@ -44,4 +44,3 @@ async function loadPosts() {
 }
 
 loadPosts();
-

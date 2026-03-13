@@ -3,13 +3,20 @@
   --brdr: #787878;
 }
 
+/*
 @font-face {
   font-family: "JetBrainsMono";
   src: url("./assets/font.woff2") format("woff2");
 }
+*/
+
+@font-face {
+  font-family: "Departure";
+  src: url("./assets/Departure.woff2") format("woff2");
+}
 
 body {
-  font-family: "JetBrainsMono";
+  font-family: "Departure";
   display: flex;
   justify-content: center;
   background-color: black;

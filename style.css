@@ -61,6 +61,7 @@ a {
 }
 
 img {
+  border: dotted 2px var(--fg);
   width: 420px;
 }
 
